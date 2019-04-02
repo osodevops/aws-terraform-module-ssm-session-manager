@@ -2,7 +2,7 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
   bucket = "${aws_s3_bucket.bucket.id}"
   policy = <<POLICY
   {
-    "Version":""
+    "Version":"2012-10-17",
     "Statement": [
       {
         "Effect": "Deny",
