@@ -1,9 +1,9 @@
 resource "aws_ssm_document" "session_manager_settings" {
-  name = "SSM-SessionManagerRunShell"
+  name            = "SSM-SessionManagerRunShell"
   document_format = "JSON"
-  document_type = "Session"
+  document_type   = "Session"
 
-  content = <<DOC
+  content = <<EOF
 {
     "schemaVersion": "1.0",
     "description": "Document to hold regional settings for Session Manager",
@@ -11,10 +11,10 @@ resource "aws_ssm_document" "session_manager_settings" {
     "inputs": {
         "s3BucketName": "${aws_s3_bucket.bucket.id}",
         "s3KeyPrefix": "${var.s3_key_prefix}",
-        "s3EncryptionEnabled": "${var.s3_encryption_enabled}",
+        "s3EncryptionEnabled": "${var.s3_encryption_enabled ? "true" : "false"}",
         "cloudWatchLogGroupName": "${aws_cloudwatch_log_group.session-manager-cwl-group.name}",
-        "cloudWatchEncryptionEnabled": "${var.cloudwatch_encryption_enabled}"
+        "cloudWatchEncryptionEnabled": "${var.cloudwatch_encryption_enabled ? "true" : "false"}"
     }
 }
-DOC
+EOF
 }

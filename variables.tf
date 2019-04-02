@@ -27,7 +27,7 @@ variable "bucket_versioning" {
 }
 
 variable "cloudwatch_log_group_name" {
-  default =  ""
+  default = ""
 }
 
 variable "cloudwatch_encryption_enabled" {
