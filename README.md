@@ -105,14 +105,10 @@ We are a cloud consultancy specialising in transforming technology organisations
 
 Check out [our other projects][github], [follow us on twitter][twitter], or [hire us][hire] to help with your cloud strategy and implementation.
 
-
-[![README Footer][readme_footer_img]][readme_footer_link]
-[![Beacon][beacon]][website]
-
   [logo]: https://osodevops.io/assets/images/logo-purple-b3af53cc.svg
   [website]: https://osodevops.io/
   [github]: https://github.com/orgs/osodevops/
   [hire]: https://osodevops.io/contact/
   [linkedin]: https://www.linkedin.com/company/oso-devops
   [twitter]: https://twitter.com/osodevops
-  [email]: https://www.osodevops.io/contact/ 
+  [email]: https://www.osodevops.io/contact/
