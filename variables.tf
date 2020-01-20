@@ -37,7 +37,3 @@ variable "cloudwatch_encryption_enabled" {
 variable "common_tags" {
   type = "map"
 }
-
-locals {
-  environments = "${substr(var.common_tags["Environment"],0,1)}"
-}
