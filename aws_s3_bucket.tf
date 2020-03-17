@@ -16,7 +16,11 @@ resource "aws_s3_bucket" "bucket" {
     }
   }
 
-  tags = "${merge(var.common_tags,
-    map("Name", "${var.s3_bucket_name}")
-    )}"
+  tags = merge(
+    var.common_tags,
+    {
+      "Name" = var.s3_bucket_name
+    },
+  )
 }
+
