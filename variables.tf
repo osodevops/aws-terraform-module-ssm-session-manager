@@ -18,6 +18,11 @@ variable "s3_key_prefix" {
   default = "foo-bar"
 }
 
+variable "cloudwatch_log_group_name" {
+  type    = string
+  default = "foo-bar"
+}
+
 variable "s3_encryption_enabled" {
   type    = bool
   default = false
@@ -31,11 +36,6 @@ variable "s3_bucket_force_destroy" {
 variable "bucket_versioning" {
   type    = bool
   default = false
-}
-
-variable "cloudwatch_log_group_name" {
-  type    = bool
-  default = "foo-bar"
 }
 
 variable "cloudwatch_encryption_enabled" {
