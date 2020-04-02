@@ -17,4 +17,6 @@ resource "aws_ssm_document" "session_manager_settings" {
     }
 }
 EOF
+
 }
+
