@@ -1,11 +1,11 @@
 variable "kms_alias" {
   type    = string
-  default = ""
+  default = "aws/s3"
 }
 
 variable "s3_bucket_name" {
   type    = string
-  default = ""
+  default = "foo-bar"
 }
 
 variable "s3_bucket_acl" {
@@ -15,7 +15,7 @@ variable "s3_bucket_acl" {
 
 variable "s3_key_prefix" {
   type    = string
-  default = ""
+  default = "foo-bar"
 }
 
 variable "s3_encryption_enabled" {
@@ -35,7 +35,7 @@ variable "bucket_versioning" {
 
 variable "cloudwatch_log_group_name" {
   type    = bool
-  default = ""
+  default = "foo-bar"
 }
 
 variable "cloudwatch_encryption_enabled" {
