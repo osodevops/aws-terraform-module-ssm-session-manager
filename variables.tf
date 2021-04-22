@@ -44,8 +44,6 @@ variable "cloudwatch_encryption_enabled" {
 }
 
 variable "common_tags" {
-  type    = map
-  default = {
-    Name  = "Oso-Test"
-  }
+  type    = map(string)
+  default = {}
 }
