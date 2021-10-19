@@ -89,7 +89,7 @@ Check out these related projects.
 Discover our customer stories and see what OSO can deliver for your business.
 
 - [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) - AWS tutorial following best practice from OSO
-- [OpenVPN using SSM](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html) - Provides a production ready OpenVPN Server usng SSM provisioning
+- [OpenVPN using SSM](https://github.com/osodevops/aws-terraform-module-openvpn-byol) - Provides a production ready OpenVPN Server usng SSM provisioning
 
 
 
