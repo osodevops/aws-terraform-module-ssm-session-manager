@@ -59,4 +59,4 @@ references:
     url: "https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html"
   - name: "OpenVPN using SSM"
     description: "Provides a production ready OpenVPN Server usng SSM provisioning"
-    url: "https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html"
+    url: "https://github.com/osodevops/aws-terraform-module-openvpn-byol"
